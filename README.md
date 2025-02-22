@@ -1,6 +1,8 @@
 # Jigsaw Puzzle
 
-A sleek, professional, and interactive jigsaw puzzle game built with HTML, CSS, and JavaScript. This application features a modern black-themed design, a dynamic timer, and intuitive gameplay, allowing users to assemble puzzle pieces or upload their own images.
+A sleek, professional, and interactive jigsaw puzzle game built with HTML, CSS, and JavaScript. This application features a modern black-themed design, a dynamic timer, and intuitive gameplay, allowing users to assemble puzzle pieces or upload their own images. <br>
+
+[Click here to Play](https://soubhagya2001.github.io/Jigsaw-Puzzle/)
 
 ## Screenshots
 
