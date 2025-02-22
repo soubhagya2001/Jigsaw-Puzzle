@@ -33,7 +33,7 @@ To run this application locally, follow these steps:
 1. **Clone the Repository** :
 
    ```bash
-   git clone https://github.com/yourusername/jigsaw-puzzle.git
+   git clone https://github.com/soubhagya2001/Jigsaw-Puzzle.git
    cd jigsaw-puzzle
    ```
 
