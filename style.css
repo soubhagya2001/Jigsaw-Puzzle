@@ -1,0 +1,167 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #1c2526, #2d3839); /* Professional dark gradient */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-panel {
+  width: 180px; /* Slightly wider for better spacing */
+  height: 100vh;
+  background: #141b1c; /* Darker sidebar for contrast */
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1002;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+}
+
+.game-title {
+  font-size: 34px;
+  color: #e0e0e0; /* Light grey for elegance */
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Subtle glow */
+}
+
+.crafted-by {
+  font-size: 12px;
+  color: #a0a0a0; /* Muted grey for professionalism */
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  opacity: 0.8; /* Slightly faded for subtlety */
+}
+
+.timer {
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(45deg, #2a2a2a, #3a3a3a); /* Sleek grey gradient */
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.1); /* Professional glow */
+  display: none;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #4a4a4a; /* Subtle border */
+  transition: all 0.3s ease;
+}
+
+.timer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 10%, transparent 50%);
+  animation: rotate 6s linear infinite; /* Slow rotating effect */
+}
+
+.timer:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.action-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #e0e0e0; /* Light grey text */
+  background: linear-gradient(90deg, #3a3a3a, #4a4a4a); /* Professional grey gradient */
+  border: 1px solid #5a5a5a; /* Subtle border */
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 140px; /* Slightly wider for balance */
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, #4a4a4a, #5a5a5a);
+  border-color: #6a6a6a;
+}
+
+.action-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.action-button.hidden {
+  display: none;
+}
+
+.puzzle-container {
+  flex: 1;
+  height: 100vh;
+  background: rgba(20, 27, 28, 0.9); /* Slightly lighter dark for contrast */
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.polypiece {
+  position: absolute;
+  overflow: hidden;
+}
+
+.moving {
+  transition-property: top, left;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-out;
+}
+
+.gameCanvas {
+  display: none;
+  position: absolute;
+}
+
+div[style*="font-size: 32px"] {
+  background: rgba(20, 20, 20, 0.95); /* Darker, professional bg */
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  color: #00cc00; /* Bright green for contrast */
+  border: 1px solid #3a3a3a;
+  position: absolute;
+  top: 10%;
+  left: 90%; /* Start on the right */
+  transform: translateX(0);
+  z-index: 1002;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  animation: slideToCenter 1s ease-out forwards;
+}
+
+@keyframes slideToCenter {
+  0% { left: 90%; transform: translateX(0); }
+  100% { left: 50%; transform: translateX(-50%); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
