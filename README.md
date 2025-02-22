@@ -22,7 +22,7 @@ A sleek, professional, and interactive jigsaw puzzle game built with HTML, CSS, 
 ## Credits
 
 - **Crafted by**: [Soubhagya](https://www.linkedin.com/in/soubhagya-prusty-5424811b6/) - Developer of this enhanced version with a professional UI and additional features.
-- **Inspired by**: This project was inspired by an original jigsaw puzzle implementation by [Dillon](https://codepen.io/Dillo/pen/QWKLYab). I've built upon their foundational work, adding a modern design and improved functionality. Special thanks to them for the initial inspiration!
+- **Inspired by**: This project was inspired by an original jigsaw puzzle implementation by [Dillon](https://codepen.io/Dillo/pen/QWKLYab). <br><br>I've built upon their foundational work, adding a modern design and improved functionality. Special thanks to them for the initial inspiration!
 
 ---
 
