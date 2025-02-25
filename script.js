@@ -979,7 +979,7 @@ let loadFile = (function () {
 })();
 
 function loadInitialFile() {
-  puzzle.srcImage.src = "https://w.wallhaven.cc/full/j8/wallhaven-j83vrw.jpg";
+  puzzle.srcImage.src = ".\\wallhaven.jpg";
 }
 
 function fitImage(img, width, height) {
